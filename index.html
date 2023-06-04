@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 49-58</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- chp 53 to 58 star. -->
+      <!-- 01 -->
+  
+      <input type="button" value="click" onclick="alert ('Have a Nice Day!')">
+      <br><br><br><br><br><br><br><br>
+  <a><img id = "pic1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Yvg0SOS2U-kamIe9Uo1LDqPZKMIcijy1nw&usqp=CAU"></a>
+  <a> <img id = "pic2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR77Yi1AGXsVmd7wJCbVgwABGzXA92n271zag&usqp=CAU"></a> 
+  <a><img id = "pic3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY73fIxoQGXThVnUkBffKa3f2fSueP-nj7w&usqp=CAU"></a>
+  <a><img id = "pic4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeta951BAwoBn-UODizgoekUzE1NxmK81e3Q&usqp=CAU"></a><br>
+  
+
+    <!-- 01 -->
+    <h1><i>Signup Form</i></h1>
+  <form id="signupForm" onsubmit="handleSubmit(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="formData"></div>
+  
+  <!-- 02 -->
+  <h1>Item Details</h1>
+  <div id="itemDetails">
+    <h2>Item 1</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iure praesentium aliquid optio, voluptate ducimus veniam et numquam non fugit.
+    <span id="item1FullDetails" class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, temporibus!</span></p>
+    <button onclick="showFullDetails('item1FullDetails')">Read more</button>
+    
+    <h2>Item 2</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iure praesentium aliquid optio, voluptate ducimus veniam et numquam non fugit.<span id="item2FullDetails" class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, temporibus!</span></p>
+    <button onclick="showFullDetails('item2FullDetails')">Read more</button>
+  </div><br>
+
+  <!-- 03 -->
+
+  <div id="editForm" class="hidden-form">
+    <h3>Edit Student</h3>
+    <label for="editName">Name:</label>
+    <input type="text" id="editName" required><br><br>
+    <label for="editAge">Age:</label>
+    <input type="number" id="editAge" required><br><br>
+    <button id="updateBtn" type="button">Update</button>
+    <button id="cancelBtn" type="button">Cancel</button>
+  </div><br>
+
+  <!-- chp 49 to 52 end. -->
+
+
+
+</body>
+</html>
